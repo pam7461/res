@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>솔로의 식탁(테블릿)</title>
+  <style>
+    *{margin:0;border:none;padding:0;}
+    
+    header{padding:10px 0;}
+    header>h1{font-size:48px;text-align:center;}
+    section{overflow:hidden;}
+    section>article{position:relative;float:left;width:49%;height:48vw;margin-bottom:10px;border:1px solid black;}
+    section>article:nth-child(2n){float:right;}
+    section>article:nth-child(1){background:url('images/img01.jpg') no-repeat center;background-size:cover;}
+    section>article:nth-child(2){background:url('images/img02.jpg') no-repeat center;background-size:cover;}
+    section>article:nth-child(3){background:url('images/img03.jpg') no-repeat center;background-size:cover;}
+    section>article:nth-child(4){background:url('images/img04.jpg') no-repeat center;background-size:cover;}
+    section>article:nth-child(5){background:url('images/img05.jpg') no-repeat center;background-size:cover;width:100%;}
+    section>article>h2{position:absolute;right:6px;bottom:6px;font-size:32px;color:white;text-shadow:3px 3px 3px black;}
+
+    footer{padding:30px 0;background:gray;}
+    footer>p{font-size:26px;text-align:center;}
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>솔로의 식탁</h1>
+    </header>
+    <section>
+      <article class="article01">
+        <h2>밥/죽</h2>
+      </article>
+      <article class="article02">
+        <h2>찌개</h2>
+      </article>
+      <article class="article03">
+        <h2>반찬</h2>
+      </article>
+      <article class="article04">
+        <h2>일품요리</h2>
+      </article>
+      <article class="article05">
+        <h2>디저트</h2>
+      </article>
+    </section>
+    <footer>
+      <p>솔로의 식탁</p>
+    </footer>
+  </div>
+</body>
+</html>
