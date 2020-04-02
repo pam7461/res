@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>솔로의 식탁(반응형)</title>
+  <style>
+    /* CSS RESET */
+    *{box-sizing:border-box;margin:0;border:none;padding:0;}
+    
+    /* 기본(모바일) 스타일 */
+    header{padding:20px 0;}header>h1{font-size:48px;text-align:center;}section{overflow:hidden;}
+    article{position:relative;height:100vw;margin-bottom:10px;border:1px solid black;background-repeat:no-repeat;background-position:center;background-size:cover;}
+    .article01{background-image:url('images/img01.jpg');}
+    .article02{background-image:url('images/img02.jpg');}
+    .article03{background-image:url('images/img03.jpg');}
+    .article04{background-image:url('images/img04.jpg');}
+    .article05{background-image:url('images/img05.jpg');}
+    article>h2{position:absolute;right:10px;bottom:10px;font-size:36px;color:white;text-shadow:5px 5px 5px black;}
+
+    footer{padding:40px 0;background:gray;}
+    footer>p{font-size:26px;text-align:center;}
+
+    /* 640이상 스타일 */
+    @media (min-width:640px){
+      header{padding:10px 0;}
+      
+      article{float:left;width:49%;height:48vw;}
+      article:nth-child(2n){float:right;}
+      article:nth-child(5){width:100%;}
+      article>h2{right:6px;bottom:6px;font-size:32px;text-shadow:3px 3px 3px black;}
+
+      footer{padding:30px 0;}
+    }
+
+    /* 960이상 스타일 */
+    @media (min-width:960px){
+
+      article{width:32%;height:32vw;margin:0 2% 10px 0;}
+      article:nth-child(2n){float:left;}
+      article:nth-child(3){margin-right:0;}
+      article:nth-child(5){width:66%;margin-right:0;}
+      article>h2{right:5px;bottom:5px;text-shadow:2px 2px 2px black;}
+
+      footer{padding:20px 0;}
+      footer>p{font-size:24px;}
+
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>솔로의 식탁</h1>
+    </header>
+    <section>
+      <article class="article01">
+        <h2>밥/죽</h2>
+      </article>
+      <article class="article02">
+        <h2>찌개</h2>
+      </article>
+      <article class="article03">
+        <h2>반찬</h2>
+      </article>
+      <article class="article04">
+        <h2>일품요리</h2>
+      </article>
+      <article class="article05">
+        <h2>디저트</h2>
+      </article>
+    </section>
+    <footer>
+      <p>솔로의 식탁</p>
+    </footer>
+  </div>
+</body>
+</html>
